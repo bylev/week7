@@ -9,8 +9,8 @@ char line[100];
 
 int main() {
 	printf("Enter the value\n: "); 
-	
-	scanf("%f", &percent);
+	fgets(line,sizeof(line), stdin);
+	sscanf(line, "%f", &percent);
 
 	if (percent < 60){
  printf ("F");
